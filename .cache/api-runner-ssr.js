@@ -1,22 +1,22 @@
 var plugins = [{
       name: 'gatsby-plugin-google-analytics',
-      plugin: require('/Users/tommysubaric/senior_design_lab3/node_modules/gatsby-plugin-google-analytics/gatsby-ssr.js'),
-      options: {"plugins":[],"trackingId":"2727","head":false,"anonymize":false,"respectDNT":false,"exclude":[],"pageTransitionDelay":0,"enableWebVitalsTracking":false},
+      plugin: require('/home/trbiv/OneDrive/School/Fall 2022/senior_design/lab3/senior_design_lab3/node_modules/gatsby-plugin-google-analytics/gatsby-ssr.js'),
+      options: {"plugins":[],"trackingId":"2727"},
     },{
       name: 'gatsby-plugin-image',
-      plugin: require('/Users/tommysubaric/senior_design_lab3/node_modules/gatsby-plugin-image/gatsby-ssr.js'),
+      plugin: require('/home/trbiv/OneDrive/School/Fall 2022/senior_design/lab3/senior_design_lab3/node_modules/gatsby-plugin-image/gatsby-ssr.js'),
       options: {"plugins":[]},
     },{
       name: 'gatsby-plugin-sitemap',
-      plugin: require('/Users/tommysubaric/senior_design_lab3/node_modules/gatsby-plugin-sitemap/gatsby-ssr.js'),
+      plugin: require('/home/trbiv/OneDrive/School/Fall 2022/senior_design/lab3/senior_design_lab3/node_modules/gatsby-plugin-sitemap/gatsby-ssr.js'),
       options: {"plugins":[],"output":"/","createLinkInHead":true,"entryLimit":45000,"query":"{ site { siteMetadata { siteUrl } } allSitePage { nodes { path } } }","excludes":[]},
     },{
       name: 'gatsby-plugin-manifest',
-      plugin: require('/Users/tommysubaric/senior_design_lab3/node_modules/gatsby-plugin-manifest/gatsby-ssr.js'),
+      plugin: require('/home/trbiv/OneDrive/School/Fall 2022/senior_design/lab3/senior_design_lab3/node_modules/gatsby-plugin-manifest/gatsby-ssr.js'),
       options: {"plugins":[],"icon":"src/images/icon.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"53aa06cf17e4239d0dba6ffd09854e02"},
     },{
       name: 'partytown',
-      plugin: require('/Users/tommysubaric/senior_design_lab3/node_modules/gatsby/dist/internal-plugins/partytown/gatsby-ssr.js'),
+      plugin: require('/home/trbiv/OneDrive/School/Fall 2022/senior_design/lab3/senior_design_lab3/node_modules/gatsby/dist/internal-plugins/partytown/gatsby-ssr.js'),
       options: {"plugins":[]},
     }]
 /* global plugins */
