@@ -4,7 +4,7 @@ import { SliderData } from '../components/SliderData';
 
 // not sure what components are being us on home page
 // just designing page for now 
-export default function ThomasProfilePage() {
+export default function ThomasPage() {
     return (
         <div>
             <h2>nav bar should be here</h2>
