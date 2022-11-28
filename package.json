@@ -1,9 +1,9 @@
 {
-  "name": "my-gatsby-site",
+  "name": "my-first-gatsby-site",
   "version": "1.0.0",
   "private": true,
-  "description": "my-gatsby-site",
-  "author": "tjsubaric",
+  "description": "My First Gatsby Site",
+  "author": "Megan Sullivan",
   "keywords": [
     "gatsby"
   ],
