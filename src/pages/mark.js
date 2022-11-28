@@ -1,15 +1,12 @@
 import * as React from 'react'
-import Layout from '../components/layout'
-import Seo from '../components/seo'
+import NavBar from '../components/navbar'
 
 const MarkPage = () => {
   return (
-    <Layout pageTitle="About Mark">
+    <NavBar pageTitle="About Mark">
       <p>Hi there! I'm the proud creator of this site, which I built with Gatsby.</p>
-    </Layout>
+    </NavBar>
   )
 }
-
-export const Head = () => <Seo title="About Me" />
 
 export default MarkPage
