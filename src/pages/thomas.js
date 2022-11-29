@@ -1,13 +1,13 @@
 import React from 'react';
 import ImageSlider from '../components/ImageSlider';
 import { SliderData } from '../components/SliderData';
-import NavBar from '../components/navbar';
+import Layout from '../components/layout';
 
 // not sure what components are being us on home page
 // just designing page for now 
 const ThomasPage = () => {
     return (
-        <NavBar pageTitle="About Thomas">
+        <Layout pageTitle="About Thomas">
             <div>
                 <h2>nav bar should be here</h2>
                 <p>Welcome to my profile </p>
@@ -17,7 +17,7 @@ const ThomasPage = () => {
                     <ImageSlider slides={SliderData}/>
                 </div>
             </div>
-        </NavBar>
+        </Layout>
     )
 }
  
