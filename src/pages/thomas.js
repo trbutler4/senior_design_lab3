@@ -20,4 +20,6 @@ const ThomasPage = () => {
         </Layout>
     )
 }
+
+export default ThomasPage
  
