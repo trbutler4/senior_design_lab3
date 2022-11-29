@@ -7,9 +7,9 @@ import {
   navLinkItem,
   navLinkText,
   siteTitle,
-} from './navbar.module.css'
+} from './layout.module.css'
 
-const NavBar = ({ pageTitle, children }) => {
+const Layout = ({ pageTitle, children }) => {
 
   return (
     <div className={container}>
@@ -51,4 +51,4 @@ const NavBar = ({ pageTitle, children }) => {
   )
 }
 
-export default NavBar
+export default Layout
