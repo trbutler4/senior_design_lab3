@@ -8,5 +8,12 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'pages',
+        path: 'senior_design_lab3/src/pages'
+      }
+    }
   ],
 };
