@@ -1,40 +1,29 @@
 import React from "react";
-import '../styles/commentSection.css'
-import { useState } from "react";
+import commentBox from 'commentbox.io'
 
-const CommentSection = () => {
-    // updating comments and comment list
-    const [comment, setComment] = useState("");
-    const [comments, setComments] = useState([]);
+commentBox('5705371448508416-proj',
+    {
+        backgroundcolor: '#262626',
+        textColor: '#fff'
+    }
+);
 
-    // update comment list on click
-    const onClickHandler = () => {
-        setComments((comments) => [...comments, comment]);
+class CommentSection extends React.Component {
+
+    componentDidMount() {
+        this.removeCommentBox = commentBox('5705371448508416-proj');
     }
 
-    // update comment on change
-    const onChangeHandler = (e) => {
-        setComment(e.target.value)
+    componentWillUnmount() {
+        this.removeCommentBox();
     }
 
-    return (
-        <div className="main-comment-container">
-            {comments.map((text) => (
-                <div className="comment-container">{text}</div>
-            ))}
-            <div className="comment-flexbox">
-                <h3 className="comment-header">Comments</h3>
-                <textarea 
-                    value={comment} 
-                    onChange={onChangeHandler} 
-                    className="comment-text"
-                />
-                <button onClick={onClickHandler} className="comment-button">Submit</button>
-            </div>
-        </div>
-    )
+    render() {
+        return (
+            <div classname="commentBox" />
+        )
+    }
+
 }
-
-
 
 export default CommentSection
