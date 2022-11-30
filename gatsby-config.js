@@ -12,7 +12,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'pages',
-        path: 'senior_design_lab3/src/pages'
+        path: './src/pages'
       }
     }
   ],
