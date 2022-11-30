@@ -10,6 +10,10 @@ const TommyPage = () => {
         alt="Clifford, a reddish-brown pitbull, dozing in a bean bag chair"
         src="../images/Godfatha.jpg"
       />
+      
+      <div class="commentbox"></div>
+      <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+      <script>commentBox('5705371448508416-proj')</script>
     </Layout>
   )
 }

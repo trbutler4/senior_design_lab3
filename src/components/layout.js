@@ -8,7 +8,6 @@ import {
   navLinkText,
   siteTitle,
 } from './layout.module.css'
-import CommentSection from '../components/CommentSection'
 
 const Layout = ({ pageTitle, children }) => {
 
@@ -47,7 +46,6 @@ const Layout = ({ pageTitle, children }) => {
       <main>
         <h1 className={heading}>{pageTitle}</h1>
         {children}
-        <CommentSection />
       </main>
     </div>
   )
