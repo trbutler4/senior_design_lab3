@@ -20,6 +20,17 @@ const JordynPage = () => {
         alt="Picture of Jordyn"
         src="../images/jordynpicture.jpg"
       />
+      <br></br>
+      <br></br>
+      
+      <p>This is my dog Murphy</p>
+      <br></br>
+      <StaticImage
+        alt="Picture of Jordyn"
+        src="../images/murphy.jpg"
+      />
+
+
     </Layout>
   )
 }
