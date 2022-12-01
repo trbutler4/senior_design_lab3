@@ -6,6 +6,7 @@ const commentBox = require("commentbox.io");
 const MarkPage = () => {
   // commentBox("5705371448508416-proj");
   return (
+    (document.body.style.backgroundColor = "yellow"),
     (
       <Layout pageTitle="About Mark">
         <p>

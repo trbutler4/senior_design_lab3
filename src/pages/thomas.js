@@ -9,6 +9,7 @@ import { Link } from 'gatsby';
 // just designing page for now
 const ThomasPage = () => {
     return (
+        document.body.style.backgroundColor = "green",
         <Layout pageTitle="About Thomas">
             <div>
                 <div>

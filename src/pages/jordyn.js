@@ -6,6 +6,7 @@ const commentBox = require("commentbox.io");
 
 const JordynPage = () => {
   return (
+    (document.body.style.backgroundColor = "pink"),
     (
       <Layout pageTitle="About Jordyn">
         <br></br>
