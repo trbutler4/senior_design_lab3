@@ -32,10 +32,6 @@ const ThomasPage = () => {
                   })}
                 </script>
 
-
-                <div class="commentbox"></div>
-                <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
-                <script>commentBox('5705371448508416-proj')</script>
             </div>
         </Layout>
     )
