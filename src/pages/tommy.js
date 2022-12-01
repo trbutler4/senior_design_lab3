@@ -4,7 +4,6 @@ import Layout from "../components/layout";
 const commentBox = require("commentbox.io");
 const TommyPage = () => {
   return (
-    (document.body.style.backgroundColor = "red"),
     (
       <Layout pageTitle="About Tommy">
         <p> University of Iowa 2023 Computer Science and Engineering</p>
