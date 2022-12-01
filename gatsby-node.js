@@ -4,6 +4,7 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
       module: {
         rules: [
           {
+            test: /commentbox.io/,
             use: loaders.null(),
           },
         ],
