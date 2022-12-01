@@ -1,50 +1,104 @@
-import * as React from "react";
+import React, { Component } from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
-const commentBox = require("commentbox.io");
+import commentBox from "commentbox.io";
 
-const JordynPage = () => {
-  return (
-    (document.body.style.backgroundColor = "pink"),
-    (
-      <Layout pageTitle="About Jordyn">
-        <br></br>
+class JordynPage extends Component {
+  componentDidMount() {
+    this.removeCommentBox = commentBox("5705371448508416-proj");
+  }
 
-        <p>University of Iowa</p>
-        <p>Major: Computer Science and Engineering</p>
+  componentWillUnmount() {
+    this.removeCommentBox();
+  }
 
-        <a
-          href="https://www.linkedin.com/in/jordyn-iannuzzelli/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          linkedin
-        </a>
-        <br></br>
-        <br></br>
+  render() {
+    return (
+      (document.body.style.backgroundColor = "pink"),
+      (
+        <Layout pageTitle="About Jordyn">
+          <br></br>
 
-        <StaticImage
-          alt="Picture of Jordyn"
-          src="../images/jordynpicture.jpg"
-        />
-        <br></br>
-        <br></br>
+          <p>University of Iowa</p>
+          <p>Major: Computer Science and Engineering</p>
 
-        <p>This is my dog Murphy</p>
-        <br></br>
-        <StaticImage alt="Picture of Jordyn" src="../images/murphy.jpg" />
+          <a
+            href="https://www.linkedin.com/in/jordyn-iannuzzelli/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            linkedin
+          </a>
+          <br></br>
+          <br></br>
 
-        <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
-        <div className="commentbox" />
-        <script>
-          {window.addEventListener("load", function () {
-            commentBox("5705371448508416-proj");
-          })}
-        </script>
-      </Layout>
-    )
-  );
-};
+          <StaticImage
+            alt="Picture of Jordyn"
+            src="../images/jordynpicture.jpg"
+          />
+          <br></br>
+          <br></br>
+
+          <p>This is my dog Murphy</p>
+          <br></br>
+          <StaticImage alt="Picture of Jordyn" src="../images/murphy.jpg" />
+
+          <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+          <div className="commentbox" />
+          <script>
+            {window.addEventListener("load", function () {
+              commentBox("5705371448508416-proj");
+            })}
+          </script>
+        </Layout>
+      )
+    );
+  }
+}
+
+// const JordynPage = () => {
+//   commentBox("5705371448508416-proj");
+//   return (
+//     (document.body.style.backgroundColor = "pink"),
+//     (
+//       <Layout pageTitle="About Jordyn">
+//         <br></br>
+
+//         <p>University of Iowa</p>
+//         <p>Major: Computer Science and Engineering</p>
+
+//         <a
+//           href="https://www.linkedin.com/in/jordyn-iannuzzelli/"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//         >
+//           linkedin
+//         </a>
+//         <br></br>
+//         <br></br>
+
+//         <StaticImage
+//           alt="Picture of Jordyn"
+//           src="../images/jordynpicture.jpg"
+//         />
+//         <br></br>
+//         <br></br>
+
+//         <p>This is my dog Murphy</p>
+//         <br></br>
+//         <StaticImage alt="Picture of Jordyn" src="../images/murphy.jpg" />
+
+//         <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+//         <div className="commentbox" />
+//         <script>
+//           {window.addEventListener("load", function () {
+//             commentBox("5705371448508416-proj");
+//           })}
+//         </script>
+//       </Layout>
+//     )
+//   );
+// };
 
 export default JordynPage;

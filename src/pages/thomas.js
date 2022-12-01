@@ -1,35 +1,74 @@
-import React from "react";
+import React, { Component } from "react";
 import ImageSlider from "../components/ImageSlider";
 import { SliderData } from "../components/SliderData";
 import Layout from "../components/layout";
 import commentBox from "commentbox.io";
 
+class ThomasPage extends Component {
+  componentDidMount() {
+    this.removeCommentBox = commentBox("5705371448508416-proj");
+  }
+
+  componentWillUnmount() {
+    this.removeCommentBox();
+  }
+
+  render() {
+    return (
+      (document.body.style.backgroundColor = "green"),
+      (
+        <Layout pageTitle="About Thomas">
+          <div>
+            <h2>nav bar should be here</h2>
+            <p>Welcome to my profile </p>
+            <div>
+              <p>about me</p>
+              <p>
+                bunch of text about me that i can edit later going here.....
+              </p>
+              <ImageSlider slides={SliderData} />
+            </div>
+          </div>
+          <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+          <div className="commentbox" />
+          <script>
+            {window.addEventListener("load", function () {
+              commentBox("5705371448508416-proj");
+            })}
+          </script>
+        </Layout>
+      )
+    );
+  }
+}
+
 // not sure what components are being us on home page
 // just designing page for now
-const ThomasPage = () => {
-  return (
-    (document.body.style.backgroundColor = "green"),
-    (
-      <Layout pageTitle="About Thomas">
-        <div>
-          <h2>nav bar should be here</h2>
-          <p>Welcome to my profile </p>
-          <div>
-            <p>about me</p>
-            <p>bunch of text about me that i can edit later going here.....</p>
-            <ImageSlider slides={SliderData} />
-          </div>
-        </div>
-        <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
-        <div className="commentbox" />
-        <script>
-          {window.addEventListener("load", function () {
-            commentBox("5705371448508416-proj");
-          })}
-        </script>
-      </Layout>
-    )
-  );
-};
+// const ThomasPage = () => {
+//   commentBox("5705371448508416-proj");
+//   return (
+//     (document.body.style.backgroundColor = "green"),
+//     (
+//       <Layout pageTitle="About Thomas">
+//         <div>
+//           <h2>nav bar should be here</h2>
+//           <p>Welcome to my profile </p>
+//           <div>
+//             <p>about me</p>
+//             <p>bunch of text about me that i can edit later going here.....</p>
+//             <ImageSlider slides={SliderData} />
+//           </div>
+//         </div>
+//         <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+//         <div className="commentbox" />
+//         <script>
+//           {window.addEventListener("load", function () {
+//             commentBox("5705371448508416-proj");
+//           })}
+//         </script>
+//       </Layout>
+//     )
+//   );
+// };
 
 export default ThomasPage;
