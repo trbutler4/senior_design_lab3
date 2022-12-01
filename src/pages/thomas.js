@@ -6,7 +6,7 @@ import commentBox from 'commentbox.io'
 import { Link } from 'gatsby';
 
 // not sure what components are being us on home page
-// just designing page for now 
+// just designing page for now
 const ThomasPage = () => {
     return (
         document.body.style.backgroundColor = "green",
@@ -24,6 +24,13 @@ const ThomasPage = () => {
                     <ImageSlider slides={SliderData}/> 
                 </div>
 
+                <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+                <div className="commentbox" />
+                <script>
+                  {window.addEventListener("load", function () {
+                    commentBox("5705371448508416-proj");
+                  })}
+                </script>
 
 
                 <div class="commentbox"></div>
@@ -32,7 +39,6 @@ const ThomasPage = () => {
             </div>
         </Layout>
     )
-}
+};
 
-export default ThomasPage
- 
+export default ThomasPage;
