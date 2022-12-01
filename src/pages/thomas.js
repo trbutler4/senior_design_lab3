@@ -8,6 +8,7 @@ import commentBox from 'commentbox.io'
 // just designing page for now 
 const ThomasPage = () => {
     return (
+        document.body.style.backgroundColor = "green",
         <Layout pageTitle="About Thomas">
             <div>
                 <h2>nav bar should be here</h2>

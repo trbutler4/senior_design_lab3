@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 
 const MarkPage = () => {
   return (
+    document.body.style.backgroundColor = "yellow",
     <Layout pageTitle="About Mark">
       <p>Hi there! I'm the proud creator of this site, which I built with Gatsby.</p>
 

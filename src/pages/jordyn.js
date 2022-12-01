@@ -6,6 +6,7 @@ import Layout from '../components/layout'
 
 const JordynPage = () => {
   return (
+    document.body.style.backgroundColor = "pink",
     <Layout pageTitle="About Jordyn">
       <br></br>
       
