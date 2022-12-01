@@ -19,7 +19,6 @@ class ThomasPage extends Component {
 
   render() {
     return (
-      (document.body.style.backgroundColor = "green"),
       (
         <Layout pageTitle="About Thomas">
           <div>
@@ -45,13 +44,7 @@ class ThomasPage extends Component {
               <ImageSlider slides={SliderData} />
             </div>
 
-            <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
             <div className="commentbox" />
-            <script>
-              {window.addEventListener("load", function () {
-                commentBox("5705371448508416-proj");
-              })}
-            </script>
           </div>
         </Layout>
       )

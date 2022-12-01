@@ -15,7 +15,6 @@ class JordynPage extends Component {
 
   render() {
     return (
-      (document.body.style.backgroundColor = "pink"),
       (
         <Layout pageTitle="About Jordyn">
           <br></br>
@@ -44,13 +43,7 @@ class JordynPage extends Component {
           <br></br>
           <StaticImage alt="Picture of Jordyn" src="../images/murphy.jpg" />
 
-          <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
           <div className="commentbox" />
-          <script>
-            {window.addEventListener("load", function () {
-              commentBox("5705371448508416-proj");
-            })}
-          </script>
         </Layout>
       )
     );

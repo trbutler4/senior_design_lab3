@@ -13,7 +13,6 @@ class MarkPage extends Component {
   }
   render() {
     return (
-      (document.body.style.backgroundColor = "yellow"),
       (
         <Layout pageTitle="About Mark">
           <p>
@@ -38,18 +37,7 @@ class MarkPage extends Component {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
-          <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
           <div className="commentbox" />
-          {/* <script>
-            {window.addEventListener("load", function () {
-              commentBox("5705371448508416-proj");
-            })}
-          </script> */}
-          {/* {commentBox("5705371448508416-proj")} */}
-
-          {/* <div class="commentbox"></div> */}
-
-          {/* <script>commentBox('5705371448508416-proj')</script> */}
         </Layout>
       )
     );

@@ -14,7 +14,6 @@ class TommyPage extends Component {
 
   render() {
     return (
-      (document.body.style.backgroundColor = "red"),
       (
         <Layout pageTitle="About Tommy">
           <p> University of Iowa 2023 Computer Science and Engineering</p>
@@ -35,13 +34,7 @@ class TommyPage extends Component {
             alt="Tommy Godfather Picture"
             src="../images/Godfatha.jpg"
           />
-          <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
           <div className="commentbox">
-            <script>
-              {window.addEventListener("load", function () {
-                commentBox("5705371448508416-proj");
-              })}
-            </script>
           </div>
         </Layout>
       )
