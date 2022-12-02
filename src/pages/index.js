@@ -5,7 +5,6 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 const IndexPage = () => {
   return (
-  document.body.style.backgroundColor = "white",
   <Layout pageTitle="Geek Squad">
       <br></br>
       <p>Welcome to our Senior Design Group Home Page!</p>
