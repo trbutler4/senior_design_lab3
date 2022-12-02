@@ -17,9 +17,16 @@ class TommyPage extends Component {
       (
         <Layout pageTitle="About Tommy">
           <p> University of Iowa 2023 Computer Science and Engineering</p>
+          <a
+            href="https://www.youtube.com/watch?v=-5zdmA7HSoE"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Motivational Video
+          </a>
+          <br></br>
           <StaticImage alt="Tommy with Bear" src="../images/Tommypic.jpg" />
           <br></br>
-
           <p>
             My name is Tommy Subaric, I am from Carpentersville, IL. Some of my
             hobbies include: Watching movies, playing sports and doing anything
