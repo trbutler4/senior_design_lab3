@@ -59,9 +59,9 @@ class MarkPage extends Component {
         />
         <br />
         <br />
+        <p>Dog Time</p>
         <img src={this.state.dogImage?.message} alt="new" />
         <br />
-
         <Button variant="contained" onClick={() => this.handleClick()}>
           New Dog!
         </Button>
