@@ -17,6 +17,8 @@ class TommyPage extends Component {
       (
         <Layout pageTitle="About Tommy">
           <p> University of Iowa 2023 Computer Science and Engineering</p>
+          <br />
+
           <a
             href="https://www.youtube.com/watch?v=-5zdmA7HSoE"
             target="_blank"
@@ -24,7 +26,9 @@ class TommyPage extends Component {
           >
             Motivational Video
           </a>
-          <br></br>
+
+          
+          <br />
           <StaticImage alt="Tommy with Bear" src="../images/Tommypic.jpg" />
           <br></br>
           <p>
